@@ -1,0 +1,14 @@
+# Django Channels Example
+
+This is an example app demonstrating how to use (and deploy) [Django Channels](http://channels.readthedocs.org/en/latest/). It's a simple real-time chat app — like a very, very light-weight Slack. There are a bunch of rooms, and everyone in the same room can chat, in real-time, with each other (using WebSockets).
+
+## Running locally
+
+
+
+Then, to run:
+
+- Install requirements: `pip install -r requirements.txt` (you almost certainly want to do this in a virtualenv).
+- Migrate: `DATABASE_URL=postgres:///... python manage.py migrate`
+- Or, to run locally with multiple proceses by setting the environ, then running the two commands (`daphne` and `runworker`) as shown in the `Procfile`.
+
